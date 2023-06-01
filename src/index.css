@@ -1,0 +1,205 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Fjalla+One&family=Poppins:wght@300&family=Roboto+Slab:wght@500&family=Roboto:wght@300;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------------------------------------Food-recipes-------------------------------------------*/
+
+
+.container {
+  width: 900px;  /* Weather App */
+  /* width: 1280px; */
+  margin: auto;
+}
+
+.flex {
+  display:  flex;
+}
+
+nav .active {
+  color : #00BFFF;
+}
+
+/*----------------------------------------Header--------------------------------*/
+/* header {
+  background-color: #23180D;
+  padding: 24px 0;
+} */
+/*-----------------------------------------Hero------------------------------------*/ 
+/* .search-inbox {
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+}
+.search-inbox input {
+  border: 2px solid #2D2013;
+  outline: none;
+  padding: 10px;
+  width: 40%;
+  border-radius: 5px;
+}
+.search-inbox > i {
+  position: absolute;
+  right:  32%;
+  color: #2D2013;
+  font-size: 25px;
+  margin-top: 3px;
+  cursor: pointer;
+} */
+
+/*-------------------------------------Food-categories--------------------------*/
+/* .food-categories {
+  margin: 20px 0;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-bottom: 2px solid #FFF;
+}
+.popular-recipe-card {
+  width: 85% !important;
+}
+.popular-recipe-card > img {
+  width: 100%;
+  object-fit:  cover;
+  height: 200px;
+}
+.recipe-name {
+  width: 80%;
+  margin: auto;
+  color: #000;
+  background-color: #FFF;
+  padding: 15px;
+  position: relative;
+  margin-top: -30px;
+}
+h4 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 30px;
+}
+h5 {
+  text-align: center;
+  color: #FF0000;
+}
+
+
+.new-recipe-card {
+  width: 90% !important;
+}
+
+.new-recipe-card > img {
+  width: 100%;
+  object-fit:  cover;
+}
+.meals-recipe-card {
+  width: 18%;
+}
+
+.meals-recipe-card > img {
+  width: 100%;
+}
+.expore-food-card {
+  margin: 50px 20px;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+.expore-food-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.expore-food-card h4 {
+  font-size: 20px;
+}
+
+@media (max-width:1200px) {
+  .popular-recipe-card {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  .new-recipe-card {
+    width: 33%;
+  }
+  .recipe-name {
+    width: 80%;
+  }
+  .expore-food-card {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media (max-width:992px) {
+  .search-inbox input {
+    width: 50%;
+  }
+  .search-inbox > i {
+    right: 26%;
+  }
+  .popular-recipe-card {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .new-recipe-card {
+    width: 45%;
+  }
+  .new-recipe-card .recipe-name {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:768px) {
+  .container {
+    width: 100%;
+  }
+  .search-inbox input {
+    width: 65%;
+  }
+  .search-inbox > i {
+    right: 20%;
+    bottom: 50px;
+    font-size: 20px;
+  }
+  .expore-food-card {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width:576px) {
+  .container {
+    width: 100%;
+  }
+  .search-inbox input {
+    width: 100%;
+  }
+  .search-inbox > i {
+    right: 5%;
+  }
+} 
+@media (max-width:520px) {
+  .search-inbox input {
+    width: 100%;
+  }
+  .expore-food-card {
+    width: 150px;
+    height: 150px;
+  }
+} */
+
+.food-categories {
+  margin: 20px 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+}
