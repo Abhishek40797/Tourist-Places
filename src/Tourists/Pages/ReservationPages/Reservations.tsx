@@ -1,5 +1,7 @@
-import { BigImages, BigTextSection, H1, Para, Wrapper } from "../../StyledComponents/Styling"
-import { ReservationCards } from "../Cards.tsx/ReservationCards"
+import { ReservationC } from "../../Components/ReservationsCard"
+import { BigImages, BigTextSection, Cards, Wrapper } from "../../StyledComponents/Styling"
+import { ReservationData } from "../../data/ReservationData"
+import { BigTexts } from "../BigText"
 import { Footer } from "../Footer"
 import { Header } from "../Header"
 
@@ -9,13 +11,26 @@ export const Reservations = ()=>{
             <Header/>
             <Wrapper>
                 <div className="flex justify-between flex-direction" style={{marginTop:"150px"}}>
-                <BigTextSection>
-                        <H1>Best Every Resevations For Your</H1>
-                        <Para>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis eius in exercitationem iusto animi, eum dicta eos reprehenderit rem veniam nemo atque, voluptatem adipisci expedita quia porro molestiae quo dolorem numquam modi, explicabo recusandae accusamus?</Para>
+
+                    <BigTextSection>
+                        <BigTexts
+                            bigtext="Best Every Resevations For Your"
+                            para="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis eius in exercitationem iusto animi, eum dicta eos reprehenderit rem veniam nemo atque, voluptatem adipisci expedita quia porro molestiae quo dolorem numquam modi, explicabo recusandae accusamus?"
+                        />
                     </BigTextSection>
+
                     <BigImages src="assets/asset 9.jpg" alt="" className="big-image" />
                 </div>
-                <ReservationCards />
+
+                <Cards className="flex">
+                   {
+                        ReservationData.map((data,i)=>{
+                            return (
+                                <ReservationC data={data} key={i}  />
+                            )
+                        })
+                   }             
+                </Cards>
             </Wrapper>
             <Footer />
         </>

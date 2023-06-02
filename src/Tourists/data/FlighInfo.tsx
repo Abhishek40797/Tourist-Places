@@ -1,4 +1,4 @@
-export const FlightInfo = [
+export const FlightInform = [
     {
         icon : "fa-solid fa-location-dot",
         text1 : "Location",

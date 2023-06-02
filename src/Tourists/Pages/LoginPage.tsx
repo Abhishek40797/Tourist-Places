@@ -1,13 +1,8 @@
 import { NavLink } from "react-router-dom"
-import { Body, UserFormContainer, UserHeadingSection,UserLogoSection, Wrapper } from "../StyledComponents/Styling"
-import { FormElements } from "../Components/FormSection"
-import { UserLoginButton } from "../Components/UserLoginButtons"
-
-const Placeholder = {
-    text1 : "Enter Your Email",
-    text2 : "Enter Your Password",
-    text3 : ""
-}
+import { Body, Button, UserFormContainer, UserLoginButtons, Wrapper } from "../StyledComponents/Styling"
+import { LogoHeadingSection } from "../Components/LogoSection"
+import { FormInputs } from "../Components/FormInput"
+import { LoginButton } from "../Components/LoginButtons"
 
 export const Login = ()=>{
     return (
@@ -16,20 +11,26 @@ export const Login = ()=>{
                 <Wrapper>
                     <UserFormContainer>
                         <div className="form-section">
-                            <UserLogoSection className="flex">
-                                <img src="assets/asset 1.png" alt="" />
-                                <h6>Smart Travel</h6>
-                            </UserLogoSection>
-                            <UserHeadingSection align="center">
-                                <h1>Welcome</h1>
-                                <p>Log in or Create Account to continues</p>
-                            </UserHeadingSection>
 
-                            <FormElements placeholder={Placeholder} label={true} />
+                            <LogoHeadingSection 
+                                image="assets/asset 1.png"
+                                text="Smart Travel"
+                                heading="Welcome"
+                                subheading="Log in or Create Account to continues"
+                                align = "center"
+                            />
+
+                            <FormInputs placeholder="Enter Your Email" label ="Email" />
+                            <FormInputs placeholder="Enter Your Password" label ="Password" />  
+                            <Button bg="#00BFFF" text="#FFF" style={{width:"100%"}}>Login</Button>
 
                             <p>or</p>
                         
-                            <UserLoginButton />
+                            <UserLoginButtons className="flex">
+                                <LoginButton icon="fa-brands fa-facebook" label="Facebook" />
+                                <LoginButton icon="fa-brands fa-google" label="Google" />
+                                <LoginButton icon="fa-brands fa-twitter" label="Twitter" />
+                            </UserLoginButtons>
 
                             <div className="links-section">
                                 <NavLink to="/" className="nav-links" >Forget Password</NavLink>

@@ -1,5 +1,4 @@
 import { HeroBody } from '../StyledComponents/GlobalStyle';
-import { ExporeCards } from './Cards.tsx/ExporeCards';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { About } from './HomePages/Aboutus';
@@ -18,7 +17,6 @@ const Home = ()=>{
                 <Hero />
                 <FlightInfo />
                 <Expore />
-                <ExporeCards />
                 <Services />
                 <Reservations />
                 <About />

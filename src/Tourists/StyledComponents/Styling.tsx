@@ -103,6 +103,10 @@ export const Button = styled.button<{bg:string,text:string}> `
     border: 1px solid #00BFFF;
     color: ${({text})=>text};
     background-color : ${({bg})=>bg};
+    i {
+        color : ${colors.primaryColor};
+        font-size : 20px;
+    }
     @media (max-width : 850px) {
         padding: 8px 20px;
     }
@@ -815,7 +819,6 @@ export const UserFormContainer = styled.div`
             img {
                 height : 680px;
             }
-            // display : none;
         }
     }
      @media (max-width : 730px) {
@@ -829,7 +832,7 @@ export const UserFormContainer = styled.div`
     }
 `;
 
-export const UserLogoSection = styled.div`
+export const LogoHeading = styled.div`
     padding : 20px 0 0 50px;
     img {
         width : 13%;
@@ -842,6 +845,7 @@ export const UserLogoSection = styled.div`
 
 export const UserHeadingSection = styled.div<{align:string}>`
     text-align : ${({align})=>align};
+    width : 100%;
     p {
         margin-top : -10px;
         text-align : ${({align})=>align} !important;
